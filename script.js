@@ -65,7 +65,8 @@ function nextQuestion() {
     }
 
     currentQuestion++;
-
+    
+  document.getElementById('progress').style.width = `${(currentQuestion / questions.length) * 100}%`;
     if (currentQuestion < questions.length) {
         loadQuestion();
     } else {
