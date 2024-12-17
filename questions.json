@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": ["Paris", "London", "Berlin", "Madrid"],
+        "answer": "Paris"
+    },
+    {
+        "id": 2,
+        "question": "Which language runs in a web browser?",
+        "options": ["Python", "Java", "C++", "JavaScript"],
+        "answer": "JavaScript"
+    },
+    {
+        "id": 3,
+        "question": "What does CSS stand for?",
+        "options": ["Central Style Sheets", "Cascading Style Sheets", "Cascading Simple Sheets", "Cars SUVs Sailboats"],
+        "answer": "Cascading Style Sheets"
+    },
+    {
+        "id": 4,
+        "question": "What is a Valid Keyword in Java?",
+        "options": ["Instance", "true", "abstract", "intsance"],
+        "answer": "abstract"
+    },
+    {
+        "id": 5,
+        "question": "The correct sequence of HTML tags for starting a webpage is -",
+        "options": ["Head, Title, HTML, body", "HTML, Body, Title, Head", "HTML, Head, Title, Body", "HTML, Head, Title, Body"],
+        "answer": "HTML, Head, Title, Body"
+    }
+]

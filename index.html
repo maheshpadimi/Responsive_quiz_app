@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-page" class="container">
+        <h1>Welcome to the Quiz!</h1>
+        <form id="user-info-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="button" onclick="startQuiz()">Start Quiz</button>
+        </form>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-page" class="container" style="display: none;">
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div id="question" class="question">Question text here</div>
+        <form id="quiz-form">
+            <div class="answers" id="answers">
+            </div>
+            <button type="button" onclick="nextQuestion()">Next</button>
+        </form>
+    </div>
+
+    <!-- Result Page -->
+    <div id="result-page" class="container" style="display: none;">
+        <h2>Your Score:</h2>
+        <div class="result-info">
+            <p><strong>Name:</strong> <span id="result-name"></span></p>
+            <p><strong>Email:</strong> <span id="result-email"></span></p>
+            <p><strong>Score:</strong> <span id="score-percentage">0%</span></p>
+        </div>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
