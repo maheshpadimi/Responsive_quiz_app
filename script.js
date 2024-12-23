@@ -24,8 +24,15 @@ function startQuiz() {
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
 
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
     if (!name || !email) {
         alert('Please fill in your name and email to start the quiz.');
+        return;
+    }
+
+    if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
         return;
     }
 
